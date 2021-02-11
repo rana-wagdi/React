@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Person from './Person/Person';
+import UserInput from './UserInput/UserInput';
+import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
   state = {
@@ -21,16 +22,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Person
+        <UserInput
           name={this.state.persons[0].name}
           city={this.state.persons[0].city}
           changed={this.nameEventHandler}
-          click={this.nameEventHandler.bind(this, "rose")}
+          
         />
-        <Person
+        <UserInput
           name={this.state.persons[1].name}
           city={this.state.persons[1].city}
         />
+        <UserOutput/>
       </div>
     );
   }
