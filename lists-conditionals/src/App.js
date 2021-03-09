@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
 import './App.css';
 
-function App() {
-  return (
+class App extends Component {
+ state = {
+    userInput:''
+  }
+  changeHandlerEvent = (event) => {
+    this.setState({userInput: event.target.value});
+  }
+  render(){
+      return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Rana wagdi</h1>
+      {/* create a input with change listener which outputs the length */}
+      <input type="text"
+             onChange={this.changeHandlerEvent}
+             value={this.state.userInput}>
+
+            </input>
+            <p>{this.state.userInput}</p>
     </div>
   );
+  }
+
 }
 
 export default App;
