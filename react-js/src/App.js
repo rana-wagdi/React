@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Heading from "./Heading.jsx";
-import List from './List';
+import Index from "./components/Index";
 
 class App extends Component {
   render() {
     return (
-      <div >
-        <Heading />
-        <List />
-      </div>
+      
+        <Index />
+      
     );
   }
 }
