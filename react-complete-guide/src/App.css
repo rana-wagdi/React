@@ -10,3 +10,9 @@ button{
   border-color: blanchedalmond;
   cursor: pointer;
 }
+.red {
+  color: red;
+}
+.bold{
+  font-weight: bold;
+}
