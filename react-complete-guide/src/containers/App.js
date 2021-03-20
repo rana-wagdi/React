@@ -68,7 +68,9 @@ class App extends Component {
       //we can add just one component
       <div className= {classes.App}>
         <Cockpit
-        showPeople = {this.state.showPeople} persons = {this.state.persons}
+        showPeople = {this.state.showPeople}
+         persons = {this.state.persons}
+         clicked={this.togglePersonHandler}
          />
         {persons}
       </div>
