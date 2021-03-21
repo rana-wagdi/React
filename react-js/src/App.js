@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Index from "./components/Index";
+// import {add, multiply, subtract, divide} from './Calculator';
 import  * as Calculator from "./Calculator";
 class App extends Component {
   render() {
