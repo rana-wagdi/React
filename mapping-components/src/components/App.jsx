@@ -13,7 +13,11 @@ function App() {
         <span>emojipedia</span>
       </h1>
 
-      {emojipedia.map(crateEmoji)}
+      {emojipedia.map(crateEmoji=>
+      <Entry
+      emoji={emoj.emoji}
+      name={emoj.name} 
+      mean={emoj.meaning} /> )}
 </div>
         );
 }
