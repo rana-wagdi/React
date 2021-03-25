@@ -29,12 +29,17 @@ var numbers = [3, 56, 2, 48, 5];
 
 //Reduce - Accumulate a value by doing something to each item in an array.
 
-var newNumber = 0;
-numbers.forEach(function(currentNumber){
-    newNumber += currentNumber
+// var newNumber = 0;
+// numbers.forEach(function(currentNumber){
+//     newNumber += currentNumber
+// })
+// console.log(newNumber)
+
+// accumulter m3naha zy ((var new Number =  0))
+var newNumber = numbers.reduce(function (accumulater, currentNumber){
+    return accumulater + currentNumber
 })
 console.log(newNumber)
-
 
 //Find - find the first item that matches from an array.
 
