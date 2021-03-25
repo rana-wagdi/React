@@ -1,4 +1,4 @@
-var numbers = [3, 56, 2, 48, 5];
+// var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
 
@@ -51,7 +51,15 @@ var numbers = [3, 56, 2, 48, 5];
 // })
 // console.log(newNumber)
 //FindIndex - find the index of the first item that matches.
-const newNumber = numbers.findIndex(function (num) {
-  return num > 10;
-});
-console.log(newNumber);
+// const newNumber = numbers.findIndex(function (num) {
+//   return num > 10;
+// });
+// console.log(newNumber);
+import emojipedia from "./emojipedia";
+
+ const newEmoj = emojipedia.map(function (emojiEntry) {
+ return  emojiEntry.meaning.substring(0,100);
+ });
+ 
+
+console.log(newEmoj)
