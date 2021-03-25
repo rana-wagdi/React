@@ -36,11 +36,18 @@ var numbers = [3, 56, 2, 48, 5];
 // console.log(newNumber)
 
 // accumulter m3naha zy ((var new Number =  0))
-var newNumber = numbers.reduce(function (accumulater, currentNumber){
-    return accumulater + currentNumber
-})
-console.log(newNumber)
+// var newNumber = numbers.reduce(function (accumulater, currentNumber){
+//     console.log("accumulater = "+ accumulater)
+//     console.log("currentNumber = " + accumulater);
+
+//     return accumulater + currentNumber
+// })
+
 
 //Find - find the first item that matches from an array.
 
+const newNumber = numbers.find(function(num){
+    return num > 10
+})
+console.log(newNumber)
 //FindIndex - find the index of the first item that matches.
