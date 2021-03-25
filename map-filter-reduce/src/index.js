@@ -1,12 +1,12 @@
-// var numbers = [3, 56, 2, 48, 5];
+ var numbers = [3, 56, 2, 48, 5];
 
 //Map -Create a new array by doing something with each item in an array.
 
-// const newNumbers= numbers.map(function(x){
-//     return x * 2;
+const newNumbers= numbers.map((x=>{
+    return x * 2;
     
-// })
-// console.log(newNumbers);
+}))
+console.log(newNumbers);
 
 //Filter - Create a new array by keeping the items that return true.
 
@@ -55,11 +55,11 @@
 //   return num > 10;
 // });
 // console.log(newNumber);
-import emojipedia from "./emojipedia";
+// import emojipedia from "./emojipedia";
 
- const newEmoj = emojipedia.map(function (emojiEntry) {
- return  emojiEntry.meaning.substring(0,100);
- });
+//  const newEmoj = emojipedia.map(function (emojiEntry) {
+//  return  emojiEntry.meaning.substring(0,100);
+//  });
  
 
-console.log(newEmoj)
+// console.log(newEmoj)
