@@ -19,15 +19,22 @@ var numbers = [3, 56, 2, 48, 5];
 
 // hn3mleha l forEach
 
-var newNumbers = [];
-numbers.forEach(function(num){
-    if (num < 10){
-        newNumbers.push(num)
-    }
-    console.log(newNumbers)
-})
+// var newNumbers = [];
+// numbers.forEach(function(num){
+//     if (num < 10){
+//         newNumbers.push(num)
+//     }
+//     console.log(newNumbers)
+// })
 
 //Reduce - Accumulate a value by doing something to each item in an array.
+
+var newNumber = 0;
+numbers.forEach(function(currentNumber){
+    newNumber += currentNumber
+})
+console.log(newNumber)
+
 
 //Find - find the first item that matches from an array.
 
