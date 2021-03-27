@@ -14,7 +14,7 @@ function App() {
 //       isLoggedIn === true ? <h1>Hello</h1>
 //  : <Login />
 
-      currentTime <=12 ? <h1>GOOd morning</h1> : <h1>Good evening</h1>
+      currentTime <=12 && <h1>GOOd morning</h1> 
    
   
      } </div>
