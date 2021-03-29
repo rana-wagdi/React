@@ -12,6 +12,9 @@ function handlingClick(){
 function handleMouseOver(){
   setMouseOver(true);
 }
+function handleMouseOut() {
+  setMouseOver(false);
+}
   return (
     <div className="container">
       <h1>{handlingText}</h1>
