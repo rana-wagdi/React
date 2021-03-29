@@ -19,7 +19,7 @@ function handleMouseOut() {
     <div className="container">
       <h1>{handlingText}</h1>
       <input type="text" placeholder="What's your name?" />
-      <button style = {{backgroundColor: isMouseOver? "blue" : "white"}}
+      <button style = {{backgroundColor: isMouseOver? "black" : "white"}}
       onClick = {handlingClick}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}>Submit</button>
