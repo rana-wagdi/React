@@ -15,14 +15,16 @@ function handleClick(){
   return (
     <div className="container">
       <h1>Hello {handleText}</h1>
-      <input
-        onChange={handleChange}
-        type="text"
-        placeholder="What's your name?"
-      />
-      <button onClick={handleClick} value={name}>
-        Submit
-      </button>
+      <form onSubmit={handleClick}>
+        <input
+          onChange={handleChange}
+          type="text"
+          placeholder="What's your name?"
+        />
+        <button value={name}>
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
