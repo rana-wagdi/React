@@ -7,7 +7,6 @@ const createReducer = (state = {counter :0}, action)=> {
     }
     if(action.type === 'decrement'){
         return state.counter - 1
-
     }
     return state;
 }
