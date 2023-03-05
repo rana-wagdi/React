@@ -5,13 +5,15 @@ const Auth = () => {
   const dispatch = useDispatch()
   // const auth = useSelector(state.isAuthenticated)
 
-  const login = () =>  {
+  const login = (event) =>  {
+    event.preventDefault();
     dispatch(authAction.login())
   }
+
   return (
     <main className={classes.auth}>
       <section>
-        <form>
+        <form onSubmit={login}>
           <div className={classes.control}>
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' />
@@ -20,7 +22,7 @@ const Auth = () => {
             <label htmlFor='password'>Password</label>
             <input type='password' id='password' />
           </div>
-          <button onClick={login}>Login</button>
+          <button>Login</button>
         </form>
       </section>
     </main>
