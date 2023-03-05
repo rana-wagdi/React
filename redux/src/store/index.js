@@ -32,12 +32,12 @@ const initialAuthState = {
   isAuthenticated: false,
 };
 const authSlice = createSlice({
-  name: "athentivation",
+  name: "athentication",
   initialState: initialAuthState,
   reducers: {
     login(state) {
       state.isAuthenticated = true;
-      alert("heeey !!!!");
+      
     },
     logout(state) {
       state.isAuthenticated = false;
